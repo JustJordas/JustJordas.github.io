@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title>Fizica</title>
+    </head>
+    
+    <body>
+        <header>
+            <button class="logIn_button" type="button">Log in</button>
+        </header>
+        
+        <aside>
+            <nav>
+                <details>
+                    <summary>Materiale</summary>
+                    <ul>
+                        <?php
+                            $files = scandir('.');
+
+                            foreach($files as $filename)
+                                echo "<li><details><summary>Mecanica</summary><ul>Mecanica 0</ul><ul>Mecanica 1</ul><ul>Mecanica 2</ul></details></li>";
+                        ?>
+                        <!--
+                        <li>
+                            <details>
+                                <summary>Mecanica</summary>
+                                <ul>Mecanica 0</ul>
+                                <ul>Mecanica 1</ul>
+                                <ul>Mecanica 2</ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Termodinamica</summary>
+                                <ul>Termo 0</ul>
+                                <ul>Termo 1</ul>
+                                <ul>Termo 2</ul>
+                            </details>
+                        </li>
+                        <li>Optica</li>
+                        <li>Electricitate si Electromagnetism</li>
+                        <li>Relativitate</li>-->
+                    </ul>
+                </details>
+            </nav>
+        </aside>
+        
+        <article>
+        </article>
+        
+        <footer>
+        </footer>        
+    </body>
+</html>
